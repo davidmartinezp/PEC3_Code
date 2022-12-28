@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ritmo: Rutas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header class ="headerArchiv">  
+        <h1>
+            <img
+                src="img/isologo-white.png"
+                alt="Logo de la compañía Ritmo"> 
+            <a href="index.html">ritmo</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="practica-el-running.html">Practica el running</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><span class="Selected"><a href="inscripcion-socios.html">Hazte socio</a></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Hazme socio del club de running Ritmo
+        </h2>
+        <div class="formulario">
+            <p>
+                Los campos señalados con * son obligatorios
+            </p>
+            <form action="/my-handling-form-page" method="post">
+                <fieldset>
+                  <legend>Tipo de cuota *</legend>
+                  <p>
+                    <input type="radio" name="TipCuota" id="Mensual" value="Mensual" required >
+                    <label for="Mensual">Mensual (30 €)</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="TipCuota" id="Trimestral" value="Trimestral" required >
+                    <label for="Trimestral">Trimestral (45 €)</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="TipCuota" id="Anual" value="Anual" required >
+                    <label for="Anual">Trimestral (100 €)</label>
+                  </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos personales y de contacto *</legend>
+                    <div class = "rowForm">
+                        <div class = "columnForm">
+                            <label for="Nombre">Nombre *</label>
+                            <input type="text" id="Nombre" name="user_nombre" placeholder=" " required pattern="[A-Za-z'-]{2,64}">
+                        </div>
+                        <div class = "columnForm">
+                            <label for="Apellidos">Apellidos *</label>
+                            <input type="text" id="Apellidos" name="user_apellidos" placeholder=" " required pattern="[A-Za-z'-]{2,128}">
+                        </div>
+                    </div>
+                    <div class = "rowForm">
+                        <div class = "columnForm">
+                            <label for="mail">Correo electrónico *</label>
+                            <input type="email" id="mail" name="user_mail" placeholder=" " required>
+                        </div>
+                        <div class = "columnForm">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel"  id="telefono" name="user_telefono" placeholder=" " required>
+                        </div>
+                    </div>
+                    <div class = "rowForm">
+                        <div class = "columnForm">
+                            <label for="birth">Fecha de nacimiento *</label>
+                            <input type="date" id="birth" name="user_birthDate" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otras informaciones</legend>
+                    <p class = "OtrasInfo">
+                        <label for="msg">¿Por qué estás interesado en hacerte socio?</label>
+                        <textarea id="msg" name="user_interesadoHacerte"></textarea>
+                    </p>
+                    <div class = "rowForm">
+                        <div class = "columnForm">
+                            <label for="medio">¿Por qué medio nos ha conocido?</label>
+                            <select id="medio" name="user_medioConocer">
+                            <option value="Selecc_Opcion">Selecciona una opción</option>
+                            <option value="Prensa">Prensa</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Otro_socio">Otro socio</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Pago</legend>
+                    <p>
+                        <label for="TitularCuenta">Titular de la cuenta *</label>
+                        <input type="text" id="TitularCuenta" name="user_TitularCuenta" placeholder=" " required>
+                    </p>
+                    <p>
+                        <label for="NumeroCuenta">Número de cuenta *</label>
+                        <input type="text" id="NumeroCuenta" name="user_NumeroCuenta" placeholder=" " required>
+                    </p>
+                </fieldset>
+                <p>
+                    NFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <span class="Recalc">RITMO. Finalidades:</span> recogida de datos para la inscripción como socio del interesado. 
+                    <span class="Recalc">Legitimación:</span> Consentimiento del intersado. <span class="Recalc">Destinatarios:</span> No están previstas cesiones de datos a terceros, 
+                    excepto obligación legal. <span class="Recalc">Derechos:</span> Puede retirar su consentimieno en cualquier momento, así como acceder, rectificar, 
+                    suprimir sus datos y otros derechos dirigiéndose a <a class = "inlineLink" href="mailto:info@ritmo.org?Subject=Datos%20personales">info@ritmo.org</a>. <span class="Recalc">Información Adicional:</span> Puede ampliar la información 
+                    en el enlace de <a class = "inlineLink" href="#">Aviso Legal</a> i <a class = "inlineLink" href="#">Política de privacidad</a>. 
+                </p>
+                <input type="checkbox" id="PolitPriv" name="PolitPriv" required>
+                <label for="PolitPriv">He leído y acepto la <a class = "inlineLink" href="#">política de privacidad</a> *</label>
+                <p>
+                    <button type="submit">ENVIAR</button>
+                </p>
+                
+            </form>
+        </div>
+    </main>
+    <footer class="NormalFooter">
+        <p><time datetime="2022">2022</time> © David Martínez Perelló</p>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+      </ul>
+      </footer>
+  </body>
+</html>
