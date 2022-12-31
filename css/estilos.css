@@ -6,10 +6,12 @@ body {
 }
 
 a:visited, a, a:hover  {
-    color: rgb(0,0,0);
     text-decoration:none;
 }
 
+header a:visited, a, a:hover  {
+    color: rgb(0,0,0);
+}
 
 header, nav ul{
     display: flex;
@@ -69,7 +71,7 @@ h1{
     font-size: 0.8em;
 }
 
-.container, .containerReferentes
+.container, .containerReferentes, .container11Feb, .containerIniciativas
 {
     line-height: 150%;
     width: 90%; 
@@ -392,20 +394,132 @@ a.refCient:visited, a.refCient, a.refCient:hover  {
 }
 
 
-/* --------------------------HEADER ARCHIVOS MENOS INDEX------------------- */
+/* --------------------------CONTENIDO 11Feb------------------- */
+
+.container11Feb
+{
+    color: rgb(93, 95, 121);
+}
 
 
-/* --------------------------NAVEGACIÓN------------------- */
+.container11Feb h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+}
+.container11Feb h3{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    line-height: 100%;
+}
 
+.container11Feb .ONU{
+   background-color : rgb(227, 228, 230);
+   color: black;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   width: min(1060px, 100%);
+   margin-left: 0;
+   margin-top: 0;
+   margin: 0 auto;
+   display: block;
+}
 
-/* --------------------------CUERPO------------------- */
+.container11Feb .ONU blockquote,.container11Feb .ONU figcaption {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.container11Feb .ONU figcaption
+{
+    font-size: 0.7em;
 
+}
+.container11Feb .ONU figcaption::before
+{
+    background-color: rgb(240, 93, 80);
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px;
+}
 
-/* --------------------------LISTAS-------------- */
+.videoEmbed {
+    margin-left: 0;
+    margin-right: 0;
+    width: min(560px,100%);
+    margin: auto auto;
+}
+
+.videoEmbed iframe {
+    margin: auto auto;
+    border-style:none;
+    width: min(560px,100%);
+    height: calc(100vw * 9 / 16);
+    max-height: 315px;
+}
+.videoEmbed figcaption
+{
+    width: min(560px,100%);
+    text-align: left;
+}
+
+.videoEmbed figcaption {
+    margin-top: 3px;
+    font-size: 70%;
+    text-align: left;
+    margin: auto auto;
+}
+
+/* --------------------------CONTEINDO Iniciativas------------------- */
+
+.containerIniciativas
+{
+    color: rgb(93, 95, 121);
+}
+.containerIniciativas h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.containerIniciativas ul{
+    width: min(85%,900px);
+    margin: 0 auto;
+    list-style-type: square;
+    /* margin: 0 */
+}
+
+.containerIniciativas li::marker{
+    font-size: 1.5em;
+    color: rgb(240, 93, 80);
+    margin-right: 10px;
+}
+
+.containerIniciativas li{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+.containerIniciativas p{
+    font-size: medium  ;
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.containerIniciativas a {
+    color: rgb(245, 157, 35)
+}
+.containerIniciativas a:hover {
+    color:  rgb(93, 95, 121);
+}
+
 
 /* --------------------------FIGURAS------------------- */
 
-figure img, figure iframe {
+figure img {
     margin: 0 auto;
     display: block;
     border-style:none;
@@ -413,7 +527,9 @@ figure img, figure iframe {
 
 /* --------------------------ESPECIALES------------------- */
 
-
+.Recalc {
+    font-weight: bold;
+}
 
 /* --------------------------TABLA------------------- */
 
@@ -429,7 +545,7 @@ footer img {
     margin-right: auto; 
 }  
 
-footer a, .footerLit a {
+footer a, .footerLit a,.footerLit a:visited{
     color:  rgb(255, 255, 255)
 }
 footer .mailTop
